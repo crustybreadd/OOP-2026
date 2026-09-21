@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 	auto *button2 = new QPushButton("Another button");
 	auto *button3 = new QPushButton("The Quit button");
 
-	button1->setStyleSheet("background-color: #A3C1DA; color: red;");
-	button2->setStyleSheet("background-color: #0000FF; color: white;");
+	// button1->setStyleSheet("background-color: #A3C1DA; color: red;");
+	// button2->setStyleSheet("background-color: #0000FF; color: white;");
 
 
 	layout->addWidget(label1);
