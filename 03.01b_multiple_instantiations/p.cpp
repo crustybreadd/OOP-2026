@@ -23,15 +23,17 @@ public:
 
 int main()
 {
+	
+Song s1, s2, s3; // create three Song objects
 
+    s1.enter(); // key in data for s1
+    s2.enter();
+    s3.enter();
+    printf("\n");
 
-
-
-
-
-
-
-
+    s1.print(); // print data for s1
+    s2.print();
+    s3.print();
 
 
 }

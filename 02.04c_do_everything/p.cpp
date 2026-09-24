@@ -19,7 +19,11 @@ public:
 		scanf("%d", &duration);
 	}
 
-
+	void do_everything()
+	{
+		enter();
+		print();
+	}
 
 
 
@@ -27,8 +31,7 @@ public:
 
 int main()
 {
-	Song s;
+	Song s; //allocate memory of 24 bytes for the object s
 
-	s.enter();
-	s.print();
+	s.do_everything();
 }

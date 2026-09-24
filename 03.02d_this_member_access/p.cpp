@@ -14,13 +14,14 @@ public:
 
 	void init_by_attribute()
 	{
-
-
+		strcpy(title, "Song123"); // this->title = "Song123"; // this is equivalent
+		duration = 123;
 	}
 
 	void init_by_this_attribute()
 	{
-
+		strcpy(this->title, "Song456"); 
+		this->duration = 456;
 
 	}
 };

@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-struct Song
+class Song
 {
 	char title[20];
 	int duration;
 };
 
-void print_song(struct Song s)
+void print_song(Song s)
 {
 	printf("%s (%02d:%02d)\n", s.title, s.duration / 60, s.duration % 60);
 }
 
 int main()
 {
-	struct Song s;						// reserverve memory
+	Song s;								// reserverve memory
 
 	printf("Title: ");
 	scanf("%s", s.title);				// key in title

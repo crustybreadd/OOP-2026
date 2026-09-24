@@ -23,7 +23,12 @@ public:
 
 int main()
 {
+	
+	Song s;
+	printf("Size of s: %ld\n", sizeof(s));
+	printf("Size of Song: %ld\n", sizeof(Song));
 
+	return 0;
 
 
 

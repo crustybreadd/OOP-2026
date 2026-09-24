@@ -8,7 +8,10 @@ struct Song
 
 void print_song(struct Song s)
 {
+	int min = s.duration / 60;			// convert to minutes
+	int sec = s.duration % 60;			// convert to seconds
 
+	printf("%s (%02d:%02d)\n", s.title, min, sec);
 }
 
 int main()

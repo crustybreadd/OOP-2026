@@ -2,9 +2,6 @@
 
 class Song
 {
-	char title_[20];
-	int duration_;
-
 public:
 	void print()
 	{
@@ -18,6 +15,10 @@ public:
 		printf("Duration: ");
 		scanf("%d", &duration_);
 	}
+
+private:
+	char title_[20];
+	int duration_;
 };
 
 int main()

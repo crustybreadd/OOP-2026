@@ -2,7 +2,7 @@
 
 class Song
 {
-
+public:
 	char title[20];
 	int duration;
 };

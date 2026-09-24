@@ -23,9 +23,10 @@ public:
 
 int main()
 {
+	Song s1, s2, s3;
 
-
-
-
+	printf("s1: %p\n", &s1); // print the address of s1
+	printf("s2: %p\n", &s2);
+	printf("s3: %p\n", &s3);
 
 }
