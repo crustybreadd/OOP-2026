@@ -7,7 +7,7 @@ class Song;
 class SongFriend
 {
 public:
-	void set_data(Song *pSong);
+	void set_data(Song *pSong); // address of Song object is passed to this method
 };
 
 
@@ -15,6 +15,7 @@ class Song
 {
 	// provide code to make method set_data of class 
 	// SongFriend become a friend of class Song
+	friend void SongFriend::set_data(Song *pSong); // declare set_data as a friend function of Song
 
 
 public:
@@ -28,10 +29,13 @@ private:
 	int duration_;
 };
 
-
-
-
-
+//placed here as if it were to be above the class Song definition,
+//it would not compile because the compiler would not know what Song is yet.
+void SongFriend::set_data(Song *pSong) // define set_data method of class SongFriend
+{
+	strcpy(pSong->title_, "My Song");
+	pSong->duration_ = 210;
+}
 
 
 

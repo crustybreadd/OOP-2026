@@ -5,6 +5,7 @@
 class Song
 {
 	// provide code to make method main become a friend
+	friend int main(); // declare main as a friend function of Song
 
 
 public:
@@ -23,8 +24,8 @@ int main()
 {
 	Song s;					// create empty Song
 
-
-
+	strcpy(s.title_, "My Song");	// set title to "My Song"
+	s.duration_ = 210;				// set duration to 210 seconds
 	
 	s.print();				// check if Song has changed
 }
