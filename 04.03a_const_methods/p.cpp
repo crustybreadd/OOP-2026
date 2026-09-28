@@ -7,8 +7,10 @@ public:
 
 	void add_at_the_beginning(const char*, int);
 	void print();
-	Song * pFirst() {return pFirst_;}
-	Song* pNext() {return pNext_;}
+
+	// without const, this method can modify the object
+	Song * pFirst() const {return pFirst_;} // const method, does not modify the object
+	Song* pNext() const {return pNext_;}
 
 private:
 	char title_[20];
@@ -38,6 +40,8 @@ void Song::print()
 
 }
 
+// This function takes a const reference to a Song object as a parameter
+// s is a const reference to a Song object, meaning that the function cannot modify the object
 void print_all_songs(const Song & s)
 {
 	for(Song * p = s.pFirst(); p; p = p->pNext())

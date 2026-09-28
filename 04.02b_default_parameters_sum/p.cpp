@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-
+int sum(int a, int b, int c = 0, int d = 0) // c and d have default values of 0
+{
+	return a + b + c + d;
+}
 
 
 

@@ -15,6 +15,10 @@ public:
 	void print_pointers();
 
 	// provide declaration and definition of class variable "count_" here
+	// inline static member variables are allowed in C++17 and later, so we can define it here in the class definition.
+	// so instead of defining it outside the class, we can define it here as inline static.
+	// this means that the variable is shared among all instances of the class, and it has internal linkage, so it can be defined in a header file without violating the one definition rule.
+	static inline int count_; // declare static member variable
 
 
 private:

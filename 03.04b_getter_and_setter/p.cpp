@@ -37,26 +37,6 @@ public:
 		{
 			duration_ = -duration; // if negative number is entered, store as absolute value
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 			//printf("Duration is negative!\n");
 			//exit(1); // exit the program with an error code
 		}
@@ -65,7 +45,6 @@ public:
 			duration_ = duration; // store the duration as is
 		}
 	}
->>>>>>> bf27bcc (save my changes 2026 09 28)
 
 	void print()
 	{

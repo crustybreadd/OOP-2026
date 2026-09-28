@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-
+// This function takes a reference to an integer as a parameter
+void f(int &r) // r is a reference to an integer
+{
+	r *= 2;
+}
 
 
 
