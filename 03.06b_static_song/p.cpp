@@ -89,7 +89,11 @@ void Song::add_at_the_beginning(const char* title, int duration)
 
 	if (pFirst_ != NULL) // if there is a first song
 	{
-		pFirst_->pPrevious_ = this; // set the previous pointer of the current first song to the new song
+		// "this" is from the current object, which is the new song being added
+		// pFirst_ still points to s3 at this moment (hasn't been updated yet)
+		// so this line means: s3->pPrevious_ = s4;
+		// in plain words: "s3, your previous song is now s4"
+		pFirst_->pPrevious_ = this; 
 	}
 	else // if there is no first song
 	{
@@ -119,5 +123,6 @@ int main()
 	s2.add_at_the_beginning("Song2", 200);
 	s3.add_at_the_beginning("Song3", 300);
 
-	Song::print_all();
+	// this replaces s1/s2/s3.print_all(); with Song::print_all(); to call the static member function
+	Song::print_all(); 
 }

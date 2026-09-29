@@ -11,6 +11,7 @@ void print_song(Song *p)
 	printf("%s (%02d:%02d)\n", p->title, p->duration/60, p->duration%60);
 }
 
+
 int main()
 {	
 	// provide declaration and initialization here

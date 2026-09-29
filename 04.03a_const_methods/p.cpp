@@ -9,8 +9,16 @@ public:
 	void print();
 
 	// without const, this method can modify the object
-	Song * pFirst() const {return pFirst_;} // const method, does not modify the object
-	Song* pNext() const {return pNext_;}
+	Song * pFirst() const 
+	{
+		return pFirst_; // because of the const qualifier, 
+						// this method cannot modify the object, just reads and returns the value of pFirst_
+	} 
+
+	Song* pNext() const 
+	{
+		return pNext_;
+	}
 
 private:
 	char title_[20];
