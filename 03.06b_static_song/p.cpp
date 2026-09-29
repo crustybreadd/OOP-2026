@@ -6,7 +6,7 @@
 class Song
 {
 public:
-	void print()
+	void print() const
 	{
 		// prints the title and duration of the song in the format "title (mm:ss)"
 		printf("%s (%02d:%02d)\n", title_, duration_/60, duration_%60);
@@ -68,7 +68,7 @@ void Song::print_all()
 
 // provide the implementation of member function "add_at_the_beginning()"
 // that stores the provided parameters title and duration to the allocated
-// song, verifying that the length of title_is not exceeded. Afterwards,
+// song, verifying that the length of title_ is not exceeded. Afterwards,
 // the song is added at the beginning of the list
 void Song::add_at_the_beginning(const char* title, int duration)
 {
