@@ -6,7 +6,13 @@ struct Vector
 	double y_;
 };
 
-
+// instead of Vector, use bool as the return type for operator== to compare two Vector objects
+// because operator== is a comparison operator, it should return a boolean value indicating whether the two Vector objects are equal or not
+bool operator==(const Vector& left, const Vector& right)
+{
+	printf("Calling operator==()\n");
+	return left.x_ == right.x_ && left.y_ == right.y_;
+}
 
 
 

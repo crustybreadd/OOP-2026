@@ -9,15 +9,12 @@ class Song
 public:
 
 	// provide constructor here
-
-
-
-
-
-
-
-
-
+	Song(const char *title, int duration)
+	{
+		strncpy(title_, title, sizeof(title_) - 1);
+		title_[sizeof(title_) - 1] = '\0'; // ensure null-termination
+		duration_ = duration;
+	}
 
 
 

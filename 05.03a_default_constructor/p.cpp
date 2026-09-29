@@ -8,11 +8,11 @@ class Song
 public:
 
 	// provide default constructor here
-
-
-
-
-
+	Song()
+	{
+		title_[0] = '\0'; // initialize title_ to an empty string
+		duration_ = 0;    // initialize duration_ to 0
+	}
 
 
 

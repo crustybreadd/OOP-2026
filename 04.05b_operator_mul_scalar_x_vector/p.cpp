@@ -8,13 +8,17 @@ struct Vector
 
 // provide code of operator * to calculate
 // scalar * vector or vector * scalar
+Vector operator*(double scalar, const Vector& v)
+{
+	printf("Calling operator*() for scalar * vector\n");
+	return Vector{scalar * v.x_, scalar * v.y_};
+}
 
-
-
-
-
-
-
+Vector operator*(const Vector& v, double scalar)
+{
+	printf("Calling operator*() for vector * scalar\n");
+	return Vector{scalar * v.x_, scalar * v.y_};
+}
 
 
 

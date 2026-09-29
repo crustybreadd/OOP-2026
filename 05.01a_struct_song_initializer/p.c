@@ -14,7 +14,8 @@ void print_song(Song *p)
 int main()
 {
 	// provide declaration and initialization here
-
+	Song s1 = {"Song 1", 210};
+	Song s2 = {"Song 2", 185};
 
 
 	print_song(&s1);

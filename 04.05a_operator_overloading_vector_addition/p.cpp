@@ -6,6 +6,10 @@ struct Vector
 	double y_;
 };
 
+
+// operator+() is a free function, not a member function
+// operator+ tells the compiler: 
+// "whenever someone writes something + something_else where both sides are Vectors, run this function."
 Vector operator+(const Vector& left, const Vector& right)
 {
 	printf("Calling operator+()\n");
