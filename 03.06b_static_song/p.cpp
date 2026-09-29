@@ -6,7 +6,7 @@
 class Song
 {
 public:
-	void print()
+	void print() const
 	{
 		printf("%s (%02d:%02d)\n", title_, duration_/60, duration_%60);
 	}
@@ -17,7 +17,7 @@ public:
 
 
 	// provide declaration of class variables 
-	// "pFirst_" and "pNext_"
+	// "pFirst_" and "pLast_"
 
 
 
@@ -31,7 +31,7 @@ private:
 
 // provide code to allocate memory for static class
 // variables pFirst_ and pLast_ of class Song and
-// initialize the variables with the C++ null pointer
+// initialize the variables with NULL
 
 
 
@@ -48,8 +48,24 @@ private:
 
 // provide the implementation of member function "add_at_the_beginning()"
 // that stores the provided parameters title and duration to the allocated
-// song, verifying that the length of title_is not exceeded. Afterwards,
+// song, verifying that the length of title_ is not exceeded. Afterwards,
 // the song is added at the beginning of the list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
