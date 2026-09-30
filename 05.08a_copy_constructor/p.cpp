@@ -12,11 +12,12 @@ public:
 		title_[sizeof(title_) - 1] = '\0';
 	}
 
-	Song(const Song& other) : duration_{other.duration_}
-	{
-		printf("Calling copy constructor\n");
-		memcpy(title_, other.title_, sizeof title_);
-	}
+	// provide copy constructor here
+
+
+
+
+
 
 	~Song()
 	{
@@ -36,7 +37,6 @@ private:
 	char title_[20];
 	int duration_;
 };
-
 
 int main()
 {

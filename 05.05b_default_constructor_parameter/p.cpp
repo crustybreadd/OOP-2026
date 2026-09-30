@@ -29,4 +29,7 @@ int main()
 {
 	Song s1("Song1", 123);
 	Song s2;
+	
+	s1.print();
+	s2.print();
 }

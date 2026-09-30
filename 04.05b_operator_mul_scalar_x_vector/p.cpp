@@ -19,7 +19,7 @@ struct Vector
 
 
 int main() {
-	Vector a{1, 2};
+	Vector a{2, 3};
 
 	Vector b = 3 * a;
 	Vector c = a * 3;
