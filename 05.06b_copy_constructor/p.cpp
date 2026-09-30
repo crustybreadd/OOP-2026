@@ -4,6 +4,8 @@
 class Song
 {
 public:
+
+	// constructor
 	Song(const char* title, int duration)
 	: title_{}, duration_{duration}
 	{
@@ -12,17 +14,24 @@ public:
 		title_[sizeof(title_) - 1] = '\0';
 	}
 
+	// copy constructor
 	Song(const Song& other) : duration_{other.duration_}
 	{
 		printf("Calling copy constructor\n");
 		memcpy(title_, other.title_, sizeof title_);
 	}
 
+
+	// Syntax: the class name with a ~ in front, no parameters, no return type
+	// A destructor is the opposite of a constructor: instead of running when an object is created,
+	//it runs automatically when an object is destroyed
 	~Song()
 	{
 		printf("Calling destructor\n");
 
 		// overwriting variables on the stack
+		// memset fills a block of memory with a repeated byte, same as strncpy
+		//memset(title_, 'x', sizeof(title_) - 1);
 		strncpy(title_, "xxxxxxxxxxxxxxxxxxx", sizeof(title_) - 1);
 		duration_ = 0;
 	}

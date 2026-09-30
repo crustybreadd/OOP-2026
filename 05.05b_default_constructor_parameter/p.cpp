@@ -8,13 +8,17 @@ public:
 	int duration_;
 
 	// provide parameterized constructor
+	// const char *title = "" gives the title a default too — an empty string literal
+	Song(const char* title = "", int duration = 0)
+	{
+		strncpy(title_ , title , sizeof(title_) - 1);
+		title_[sizeof(title_) - 1] = '\0';
 
+		duration_ = (duration < 0) ? 0 : duration;
 
-
-
-
-
-
+		//printf("%s (%02d:%02d)\n", title_, duration_ / 60, duration_ % 60);
+		
+	}
 
 
 
@@ -29,4 +33,7 @@ int main()
 {
 	Song s1("Song1", 123);
 	Song s2;
+
+	s1.print();
+	s2.print();
 }
