@@ -19,6 +19,7 @@ struct Vector
 
 
 
+	
 	double x_;
 	double y_;
 };

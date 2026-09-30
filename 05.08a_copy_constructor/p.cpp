@@ -46,7 +46,6 @@ private:
 	int duration_;
 };
 
-
 int main()
 {
 	Song s1("Song1", 123);
