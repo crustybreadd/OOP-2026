@@ -22,7 +22,7 @@ private:
 	static SongLE *pFirst_, *pLast_;
 };
 
-// provide pointers pFirst and pLast
+// provide pointers pFirst_ and pLast_
 
 
 
