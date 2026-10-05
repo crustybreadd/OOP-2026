@@ -28,6 +28,7 @@ SongLE *SongLE::pFirst_ = nullptr; // no song in the list yet
 SongLE *SongLE::pLast_ = nullptr; // no song in the list yet
 
 
+//construsctor that appends the song to the end of the list
 SongLE::SongLE(const char* title, int duration)
 : duration_{duration}
 {
@@ -56,6 +57,7 @@ SongLE::SongLE(const char* title, int duration)
 }
 
 
+// provide destructor that removes the song from the list
 SongLE::~SongLE()
 {
 	// remove this song from the list
