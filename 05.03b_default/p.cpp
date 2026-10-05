@@ -14,5 +14,5 @@ private:
 
 int main()
 {
-	Song s1;
+	Song s;
 }

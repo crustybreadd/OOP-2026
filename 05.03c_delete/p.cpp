@@ -4,7 +4,7 @@
 class Song
 {
 public:
-	Song() = default;
+	Song() = delete;
 
 private:
 	char title_[20];
@@ -14,5 +14,5 @@ private:
 
 int main()
 {
-	Song s1;
+	Song s;	// error
 }
